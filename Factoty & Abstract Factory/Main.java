@@ -8,9 +8,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         // Это обычный подход
+        List<Dev> devs = new ArrayList<>();
         Dev csh = new CSharpDev();
         Dev py = new PythonDev(); // добавлено позже
-        List<Dev> devs = new ArrayList<>();
         devs.add(csh); devs.add(py);
 
 

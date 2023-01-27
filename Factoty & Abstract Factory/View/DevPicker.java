@@ -20,8 +20,7 @@ public class DevPicker {
         else if (inp_lang.equalsIgnoreCase("Swift"))
             return new SwiftDevFactory();
         else {
-            System.out.println("Developer not found");
-            throw new RuntimeException();
+            throw new RuntimeException(inp_lang + " Developer not found");
         }
     }
 
