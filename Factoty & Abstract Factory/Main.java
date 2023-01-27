@@ -14,7 +14,7 @@ public class Main {
         devs.add(csh); devs.add(py);
 
 
-        // Такой подход не годится, так как если нам поадобится добавить ещё класс,
+        // Такой подход не годится, так как если нам поадобится добавить ещё класс или, не дай божЕ, зарефакторить,
         // то придётся создавать новый экземпляр класса в мейне, что неудобно
 
         // И вот тут поможет паттерн Фабрика
@@ -33,7 +33,7 @@ public class Main {
         DevPicker dp = new DevPicker();
         DevFactory dff = dp.chooseLanguage("php");
         Dev dev3 = dff.createADev();
-        Dev dev4 = dp.chooseLanguage("Swift").createADev(); // или даже так
+        Dev dev4 = dp.chooseLanguage("SWIFT").createADev(); // или даже так
         devs.add(dev3); devs.add(dev4);
 
 
