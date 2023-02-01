@@ -11,7 +11,8 @@ public class Main {
         List<Dev> devs = new ArrayList<>();
         Dev csh = new CSharpDev();
         Dev py = new PythonDev(); // добавлено позже
-        devs.add(csh); devs.add(py);
+        devs.add(csh);
+        devs.add(py);
 
 
         // Такой подход не годится, так как если нам поадобится добавить ещё класс или, не дай божЕ, зарефакторить,
@@ -34,10 +35,11 @@ public class Main {
         DevFactory dff = dp.chooseLanguage("php");
         Dev dev3 = dff.createADev();
         Dev dev4 = dp.chooseLanguage("SWIFT").createADev(); // или даже так
-        devs.add(dev3); devs.add(dev4);
+        devs.add(dev3);
+        devs.add(dev4);
 
 
         // А вот и все разрабы
-        devs.forEach(i-> i.writeCode());
+        devs.forEach(i -> i.writeCode());
     }
 }

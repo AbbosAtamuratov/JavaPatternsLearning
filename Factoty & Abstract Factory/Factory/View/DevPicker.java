@@ -2,7 +2,6 @@ package View;
 
 import DeveloperFactory.*;
 
-
 public class DevPicker {
 
     public DevFactory chooseLanguage(String inp_lang) {
