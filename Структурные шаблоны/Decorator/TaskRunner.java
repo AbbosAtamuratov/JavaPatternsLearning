@@ -17,6 +17,6 @@ public class TaskRunner {
         System.out.println("Big boy is in the house...");
         Dev javaTL = new JavaTeamLead(seniorJD);
         System.out.println(javaTL.doTheJob());
-        // Таким образом можно осздавать сущности всё более и более высокого уровня
+        // Таким образом можно создавать сущности всё более и более высокого уровня
     }
 }
